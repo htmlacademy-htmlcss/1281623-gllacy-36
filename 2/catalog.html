@@ -10,38 +10,37 @@
       <div class="header__container">
         <nav class="header__nav">
           <a class="logo" href="index.html">
-            <img class="logo__image" src="#" width="137" height="56" alt="Gllacy Shop">
+            <img src="#" width="137" height="56" alt="Gllacy Shop">
           </a>
 
           <ul class="site-nav list-reset">
             <li class="site-nav__item">
-              <a>Каталог</a>
-
-              <ul class="site-nav__pop-down-menu list-reset visually-hidden">
+              <a class="site-nav__link">Каталог</a>
+              <ul class="site-nav__pop-down-menu list-reset popup popup--closed">
                 <li class="site-nav__pop-down-menu-item">
-                  <a href="#">Новинки</a>
+                  <a class="site-nav__pop-down-menu-link" href="#">Новинки</a>
                 </li>
                 <li class="site-nav__pop-down-menu-item">
-                  <a href="#">Сливочное</a>
+                  <a class="site-nav__pop-down-menu-link">Сливочное</a>
                 </li>
                 <li class="site-nav__pop-down-menu-item">
-                  <a href="#">Щербеты</a>
+                  <a class="site-nav__pop-down-menu-link" href="#">Щербеты</a>
                 </li>
                 <li class="site-nav__pop-down-menu-item">
-                  <a href="#">Фруктовый лед</a>
+                  <a class="site-nav__pop-down-menu-link" href="#">Фруктовый лед</a>
                 </li>
                 <li class="site-nav__pop-down-menu-item">
-                  <a href="#">Мелорин</a>
+                  <a class="site-nav__pop-down-menu-link" href="#">Мелорин</a>
                 </li>
               </ul>
             </li>
 
             <li class="site-nav__item">
-              <a href="#">Доставка и оплата</a>
+              <a class="site-nav__link" href="#">Доставка и оплата</a>
             </li>
 
             <li class="site-nav__item">
-              <a href="#">О компании</a>
+              <a class="site-nav__link" href="#">О компании</a>
             </li>
           </ul>
 
@@ -49,9 +48,11 @@
 
           <ul class="user-nav list-reset">
             <li class="user-nav__item">
-              <img src="#" width="10.5" height="10.5" alt="Иконка поиска">
+              <a class="user-nav__link" href="#">
+                <img src="#" width="11" height="11" alt="Иконка поиска">
+              </a>
 
-              <div class="search visually-hidden">
+              <div class="search popup popup--closed">
                 <form class="search__form" action="https://echo.htmlacademy.ru" method="get">
                   <input class="search__input" type="search" name="search" placeholder="Поиск по сайту">
                   <button class="visually-hidden" type="submit">
@@ -62,12 +63,12 @@
             </li>
 
             <li class="user-nav__item">
-              <a href="#">
+              <a class="user-nav__link" href="#">
                 <img src="#" width="13" height="13" alt="Иконка входа">
                 Вход
               </a>
 
-              <div class="login visually-hidden">
+              <div class="login popup popup--closed">
                 <p class="login__heading">Личный кабинет</p>
 
                 <form class="login__form" action="https://echo.htmlacademy.ru" method="get">
@@ -83,12 +84,12 @@
             </li>
 
             <li class="user-nav__item">
-              <a href="#">
+              <a class="user-nav__link" href="#">
                 <img src="#" width="13" height="9" alt="Иконка корзины">
                 2 товара
               </a>
 
-              <div class="cart visually-hidden">
+              <div class="cart popup popup--closed">
                 <p class="cart__heading">Корзина</p>
 
                 <form class="cart__form" action="https://echo.htmlacademy.ru" method="get">
@@ -121,7 +122,7 @@
                 </form>
               </div>
 
-              <div class="empty-cart visually-hidden">
+              <div class="empty-cart popup popup--closed">
                 <p class="empty-cart__heading">Ваша корзина пока пуста</p>
               </div>
             </li>
@@ -226,7 +227,7 @@
         </form>
       </section>
 
-      <section class="catalog">
+      <section class="catalog catalog--page">
         <h2 class="visually-hidden">Каталог мороженого</h2>
 
         <ul class="catalog__list list-reset">
@@ -390,13 +391,13 @@
       <div class="footer__container">
         <ul class="footer-social list-reset">
           <li class="footer-social__item">
-            <a href="#">Telegram</a>
+            <a class="footer-social__link" href="#">Telegram</a>
           </li>
           <li class="footer-social__item">
-            <a href="#">VK</a>
+            <a class="footer-social__link" href="#">VK</a>
           </li>
           <li class="footer-social__item">
-            <a href="#">YouTube</a>
+            <a class="footer-social__link" href="#">YouTube</a>
           </li>
         </ul>
 
@@ -416,8 +417,11 @@
         </ul>
 
         <div class="footer-copyright">
-          <img class="footer-copyright__logo" src="#" width="93" height="27" alt="логотип HTMLAcademy">
-          <p class="footer-copyright__info">Сделано в <a href="#">.html academy</a> © 2021</p>
+          <a class="footer-copyright__logo" href="#">
+            <img class="footer-copyright__logo-image" src="#" width="93" height="27" alt="логотип HTMLAcademy">
+          </a>
+          <p class="footer-copyright__info">Сделано в
+            <a class="footer-copyright__link" href="#">.html academy</a> © 2021</p>
         </div>
       </div>
     </footer>
