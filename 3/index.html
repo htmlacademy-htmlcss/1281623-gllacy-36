@@ -279,9 +279,9 @@
               </div>
               <h3 class="catalog__item-title">Малинка</h3>
               <p class="catalog__item-description">Сливочное мороженое с малиновым джемом</p>
-              <div class="catalog__price-wrapper">
+              <div class="catalog__item-price-wrapper">
                 <span class="catalog__item-price">310 ₽/кг</span>
-                <a class="catalog__item-cart-button" type="button">
+                <a class="catalog__item-cart-button" href="#">
                   <span class="visually-hidden">Положить в корзину</span>
                   <img src="images/catalog-cart.svg" width="16" height="16" alt="Иконка корзины.">
                 </a>
@@ -294,9 +294,9 @@
               </div>
               <h3 class="catalog__item-title">Фисташка</h3>
               <p class="catalog__item-description">Фисташковый пломбир с кусочками шоколада</p>
-              <div class="catalog__price-wrapper">
+              <div class="catalog__item-price-wrapper">
                 <span class="catalog__item-price">340 ₽/кг</span>
-                <a class="catalog__item-cart-button" type="button">
+                <a class="catalog__item-cart-button" href="#">
                   <span class="visually-hidden">Положить в корзину</span>
                   <img src="images/catalog-cart.svg" width="16" height="16" alt="Иконка корзины.">
                 </a>
@@ -309,9 +309,9 @@
               </div>
               <h3 class="catalog__item-title">Черника</h3>
               <p class="catalog__item-description">Крем-брюле с черничным джемом</p>
-              <div class="catalog__price-wrapper">
+              <div class="catalog__item-price-wrapper">
                 <span class="catalog__item-price">330 ₽/кг</span>
-                <a class="catalog__item-cart-button" type="button">
+                <a class="catalog__item-cart-button" href="#">
                   <span class="visually-hidden">Положить в корзину</span>
                   <img src="images/catalog-cart.svg" width="16" height="16" alt="Иконка корзины.">
                 </a>
@@ -324,9 +324,9 @@
               </div>
               <h3 class="catalog__item-title">Бабл-гам</h3>
               <p class="catalog__item-description">Ванильный пломбир со сладкой посыпкой</p>
-              <div class="catalog__price-wrapper">
+              <div class="catalog__item-price-wrapper">
                 <span class="catalog__item-price">320 ₽/кг</span>
-                <a class="catalog__item-cart-button" type="button">
+                <a class="catalog__item-cart-button" href="#">
                   <span class="visually-hidden">Положить в корзину</span>
                   <img src="images/catalog-cart.svg" width="16" height="16" alt="Иконка корзины">
                 </a>
@@ -410,7 +410,7 @@
                     <p class="delivery__tooltip-text" id="info-label-address">Введите адрес доставки</p>
                   </div>
                 </div>
-                <input class="delivery__form-input form-input" type="text" name="address" id="address" placeholder="ул. Большая Конюшенная, 19/8">
+                <textarea class="delivery__form-input form-input" id="address" placeholder="ул. Большая Конюшенная, 19/8">
               </li>
             </ul>
 
@@ -440,52 +440,50 @@
 
     <footer class="footer">
       <div class="footer__container container">
-        <div class="footer__container">
-          <ul class="footer__social social list-reset">
-            <li class="social__item">
-              <a class="social__link" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Мы в Телеграм.</span>
-                <img src="images/social-telegram.svg" width="24" height="24" alt="Иконка Телеграм.">
-              </a>
-            </li>
-
-            <li class="social__item">
-              <a class="social__link" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Мы в Контакте.</span>
-                <img src="images/social-vk.svg" width="24" height="24" alt="Иконка В Контакте.">
-              </a>
-            </li>
-
-            <li class="social__item">
-              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Мы на YouTybe.</span>
-                <img src="images/social-youtube.svg" width="24" height="24" alt="Иконка YouTube.">
-              </a>
-            </li>
-          </ul>
-
-          <ul class="footer-about list-reset">
-            <li class="footer-about__item">
-              <a class="footer-about__link footer-about__link--important" href="#">Для поставщиков</a>
-            </li>
-            <li class="footer-about__item">
-              <a class="footer-about__link" href="#">Наши документы</a>
-            </li>
-            <li class="footer-about__item">
-              <a class="footer-about__link" href="#">О производстве</a>
-            </li>
-            <li class="footer-about__item">
-              <a class="footer-about__link" href="#">Экологические стандарты</a>
-            </li>
-          </ul>
-
-          <div class="footer-copyright">
-            <a class="footer-copyright__logo" href="https://htmlacademy.ru/">
-              <img src="images/footer-copyright-logo.svg" width="93" height="27" alt="логотип HTMLAcademy.">
-              <span class="visually-hidden">Переход на страницу HTMLAcademy.</span>
+        <ul class="footer__social social list-reset">
+          <li class="social__item">
+            <a class="social__link" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Мы в Телеграм.</span>
+              <img src="images/social-telegram.svg" width="24" height="24" alt="Иконка Телеграм.">
             </a>
-            <p class="footer-copyright__info">Сделано в <a href="https://htmlacademy.ru/">.html academy</a> &#169; 2021</p>
-          </div>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Мы в Контакте.</span>
+              <img src="images/social-vk.svg" width="24" height="24" alt="Иконка В Контакте.">
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Мы на YouTybe.</span>
+              <img src="images/social-youtube.svg" width="24" height="24" alt="Иконка YouTube.">
+            </a>
+          </li>
+        </ul>
+
+        <ul class="footer-about list-reset">
+          <li class="footer-about__item">
+            <a class="footer-about__link footer-about__link--important" href="#">Для поставщиков</a>
+          </li>
+          <li class="footer-about__item">
+            <a class="footer-about__link" href="#">Наши документы</a>
+          </li>
+          <li class="footer-about__item">
+            <a class="footer-about__link" href="#">О производстве</a>
+          </li>
+          <li class="footer-about__item">
+            <a class="footer-about__link" href="#">Экологические стандарты</a>
+          </li>
+        </ul>
+
+        <div class="footer-copyright">
+          <a class="footer-copyright__logo" href="https://htmlacademy.ru/">
+            <img src="images/footer-copyright-logo.svg" width="93" height="27" alt="логотип HTMLAcademy.">
+            <span class="visually-hidden">Переход на страницу HTMLAcademy.</span>
+          </a>
+          <p class="footer-copyright__info">Сделано в <a href="https://htmlacademy.ru/">.html academy</a> &#169; 2021</p>
         </div>
       </div>
     </footer>
