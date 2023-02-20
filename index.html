@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
+
   <body>
     <header class="header">
       <div class="header__container container">
@@ -73,13 +76,13 @@
 
                 <form class="login__form" action="https://echo.htmlacademy.ru" method="post">
                   <label class="visually-hidden" for="email">Ваша почта</label>
-                  <input class="login__input form-input" type="email" id="email"  name="email" placeholder="Ваш email" value="email@example.com" required>
+                  <input class="login__input form-input" type="email" id="email" name="email" placeholder="Ваш email" value="email@example.com" required>
 
                   <label class="visually-hidden" for="password">Ваш пароль</label>
                   <input class="login__input form-input" type="password" id="password" name="password" placeholder="Ваш пароль" value="******" required>
 
                   <div class="login__group">
-                    <button class="login__submit button button--other" type="submit">Оформить заказ</button>
+                    <button class="login__submit button button--other" type="submit">Войти</button>
                     <div class="login__help-links">
                       <a class="login__help-link" href="#">Забыли пароль?</a>
                       <a class="login__help-link" href="#">Регистрация</a>
@@ -194,12 +197,10 @@
             <div class="slider__navigation-arrows">
               <button class="slider__arrow slider__arrow--prev" type="button">
                 <span class="visually-hidden">Предыдущий слайд.</span>
-                <img src="#" width="7" height="12" alt="Стрелка.">
               </button>
 
               <button class="slider__arrow slider__arrow--next" type="button">
                 <span class="visually-hidden">Следующий слайд.</span>
-                <img src="#" width="7" height="12" alt="Стрелка.">
               </button>
             </div>
 
@@ -239,7 +240,7 @@
             </li>
             <li class="social__item">
               <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Мы на YouTybe.</span>
+                <span class="visually-hidden">Мы на YouTube.</span>
                 <img src="images/social-youtube.svg" width="24" height="24" alt="Иконка YouTube.">
               </a>
             </li>
@@ -252,13 +253,13 @@
         <div class="gifts__container container">
           <h2 class="gifts__title title-block">Заказывайте мороженое и получайте подарки!</h2>
 
-          <div class="gifts__card">
+          <div class="gifts__card gifts__card--raspberry">
             <h3 class="gifts__card-title">Малинка даром!</h3>
             <p class="gifts__card-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
             <a class="gifts__card-button button" href="#">Хочу подарок</a>
           </div>
 
-          <div class="gifts__card">
+          <div class="gifts__card gifts__card--marshmallow">
             <h3 class="gifts__card-title">Маршмеллоу даром!</h3>
             <p class="gifts__card-description">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
             <a class="gifts__card-button button" href="#">Хочу подарок</a>
@@ -338,14 +339,16 @@
 
       <section class="about-us">
         <div class="about-us__container container">
-          <h2 class="about-us__title title-block">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
+          <div class="about-us__wrapper">
+            <h2 class="about-us__title title-block">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
 
-          <ul class="about-us__list list-reset">
-            <li class="about-us__item about-us__item--production">Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</li>
-            <li class="about-us__item about-us__item--ingredients">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</li>
-            <li class="about-us__item about-us__item--quality">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</li>
-            <li class="about-us__item about-us__item--delivery">Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</li>
-          </ul>
+            <ul class="about-us__list list-reset">
+              <li class="about-us__item about-us__item--production">Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</li>
+              <li class="about-us__item about-us__item--ingredients">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</li>
+              <li class="about-us__item about-us__item--quality">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</li>
+              <li class="about-us__item about-us__item--delivery">Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -358,13 +361,15 @@
           </article>
 
           <div class="subscription">
-            <p class="subscription__text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            <div class="subscription__wrapper">
+              <p class="subscription__text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 
-            <form class="subscription__form" action="https://echo.htmlacademy.ru" method="post">
-              <label class="visually-hidden" for="subscription">Ваша почта.</label>
-              <input class="subscription__input form-input" type="email" name="email" id="subscription" placeholder="email@example.com" required>
-              <button class="subscription__submit button button--other" type="submit">Отправить</button>
-            </form>
+              <form class="subscription__form" action="https://echo.htmlacademy.ru" method="post">
+                <label class="visually-hidden" for="subscription">Ваша почта.</label>
+                <input class="subscription__input form-input" type="email" name="email" id="subscription" placeholder="email@example.com" required>
+                <button class="subscription__submit button button--other" type="submit">Отправить</button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -487,4 +492,5 @@
       </div>
     </footer>
   </body>
+
 </html>

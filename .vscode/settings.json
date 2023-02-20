@@ -18,6 +18,10 @@
   "css.lint.universalSelector": "warning",
   "css.lint.unknownVendorSpecificProperties": "warning",
   "css.lint.zeroUnits": "error",
+  "css.lint.emptyRules": "ignore",
   "html.format.endWithNewline": true,
-  "html.format.indentInnerHtml": true
+  "html.format.indentInnerHtml": true,
+  "css.styleSheets": [
+
+  ]
 }
