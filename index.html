@@ -94,7 +94,7 @@
 
             <li class="user-nav__item dropdown">
               <a class="user-nav__link dropdown__link" href="#">
-                <img src="images/user-nav-cart.svg" width="13" height="9" alt="Иконка корзины.">
+                <img src="images/user-nav-cart.svg" width="14" height="13" alt="Иконка корзины.">
                 <span>2 товара</span>
               </a>
 
@@ -142,7 +142,7 @@
               </div>
 
               <div class="cart dropdown__container dropdown__container--empty">
-                <p class="empty-cart__heading">Ваша корзина пока пуста</p>
+                <p class="cart__title cart__title--empty">Ваша корзина пока пуста</p>
               </div>
             </li>
           </ul>
@@ -255,16 +255,18 @@
         <div class="gifts__container container">
           <h2 class="gifts__title title-block">Заказывайте мороженое и получайте подарки!</h2>
 
-          <div class="gifts__card gifts__card--raspberry">
-            <h3 class="gifts__card-title">Малинка даром!</h3>
-            <p class="gifts__card-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
-            <a class="gifts__card-button button" href="#">Хочу подарок</a>
-          </div>
+          <div class="gifts__wrapper">
+            <div class="gifts__card gifts__card--raspberry">
+              <h3 class="gifts__card-title">Малинка даром!</h3>
+              <p class="gifts__card-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
+              <a class="gifts__card-button button" href="#">Хочу подарок</a>
+            </div>
 
-          <div class="gifts__card gifts__card--marshmallow">
-            <h3 class="gifts__card-title">Маршмеллоу даром!</h3>
-            <p class="gifts__card-description">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
-            <a class="gifts__card-button button" href="#">Хочу подарок</a>
+            <div class="gifts__card gifts__card--marshmallow">
+              <h3 class="gifts__card-title">Маршмеллоу даром!</h3>
+              <p class="gifts__card-description">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
+              <a class="gifts__card-button button" href="#">Хочу подарок</a>
+            </div>
           </div>
         </div>
       </section>
@@ -396,7 +398,7 @@
             <p class="delivery__form-tip">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
 
             <ul class="delivery__form-fields list-reset">
-              <li class="delivery__field delivery__field--date">
+              <li class="delivery__form-field delivery__form-field--date">
                 <div class="delivery__form-tooltip">
                   <label class="delivery__form-label" for="date">Дата</label>
                   <div class="delivery__tooltip">
@@ -482,10 +484,10 @@
             <a class="footer-about__link footer-about__link--important" href="#">Для поставщиков</a>
           </li>
           <li class="footer-about__item">
-            <a class="footer-about__link" href="#">Наши документы</a>
+            <a class="footer-about__link" href="#">О производстве</a>
           </li>
           <li class="footer-about__item">
-            <a class="footer-about__link" href="#">О производстве</a>
+            <a class="footer-about__link" href="#">Наши документы</a>
           </li>
           <li class="footer-about__item">
             <a class="footer-about__link" href="#">Экологические стандарты</a>
