@@ -50,7 +50,7 @@
           <a class="phone" href="tel:+78005558628">+7 800 555-86-28</a>
 
           <ul class="user-nav list-reset">
-            <li class="user-nav__item dropdown">
+            <li class="user-nav__item user-nav__item--search dropdown">
               <a class="user-nav__link dropdown__link" href="#">
                 <img src="images/user-nav-search.svg" width="11" height="11" alt="Иконка поиска.">
                 <span class="visually-hidden">Форма поиска.</span>
@@ -65,7 +65,7 @@
               </div>
             </li>
 
-            <li class="user-nav__item dropdown">
+            <li class="user-nav__item user-nav__item--login dropdown">
               <a class="user-nav__link dropdown__link" href="#">
                 <img src="images/user-nav-login.svg" width="13" height="13" alt="Иконка входа.">
                 <span>Вход</span>
@@ -92,7 +92,7 @@
               </div>
             </li>
 
-            <li class="user-nav__item dropdown">
+            <li class="user-nav__item user-nav__item--cart dropdown">
               <a class="user-nav__link dropdown__link" href="#">
                 <img src="images/user-nav-cart.svg" width="13" height="9" alt="Иконка корзины.">
                 <span>2 товара</span>
@@ -194,22 +194,22 @@
               <h3 class="filters__title">Жирность:</h3>
               <ul class="filters__list fats-filter__list list-reset">
                 <li class="fats-filter__item">
-                  <input class="fats-filter__radio" type="radio" name="fats" value="0%" id="fats-1">
+                  <input class="fats-filter__radio visually-hidden" type="radio" name="fats" value="0%" id="fats-1">
                   <label class="filters__label fats-filter__label" for="fats-1">0%</label>
                 </li>
 
                 <li class="fats-filter__item">
-                  <input class="fats-filter__radio" type="radio" name="fats" value="до 10%" id="fats-2" checked>
+                  <input class="fats-filter__radio visually-hidden" type="radio" name="fats" value="до 10%" id="fats-2" checked>
                   <label class="filters__label fats-filter__label" for="fats-2">до 10%</label>
                 </li>
 
                 <li class="fats-filter__item">
-                  <input class="fats-filter__radio" type="radio" name="fats" value="до 30%" id="fats-3">
+                  <input class="fats-filter__radio visually-hidden" type="radio" name="fats" value="до 30%" id="fats-3">
                   <label class="filters__label fats-filter__label" for="fats-3">до 30%</label>
                 </li>
 
                 <li class="fats-filter__item">
-                  <input class="fats-filter__radio" type="radio" name="fats" value="выше 30%" id="fats-4">
+                  <input class="fats-filter__radio visually-hidden" type="radio" name="fats" value="выше 30%" id="fats-4">
                   <label class="filters__label fats-filter__label" for="fats-4">выше 30%</label>
                 </li>
               </ul>
@@ -219,27 +219,27 @@
               <h3 class="filters__title">Наполнители:</h3>
               <ul class="filters__list fillers-filter__list list-reset">
                 <li class="fillers-filter__item">
-                  <input class="fillers-filter__checkbox" type="checkbox" name="chocolate" id="chocolate" checked>
+                  <input class="fillers-filter__checkbox visually-hidden" type="checkbox" name="chocolate" id="chocolate" checked>
                   <label class="filters__label fillers-filter__label" for="chocolate">шоколадные</label>
                 </li>
 
                 <li class="fillers-filter__item">
-                  <input class="fillers-filter__checkbox" type="checkbox" name="sugar" id="sugar" checked>
+                  <input class="fillers-filter__checkbox visually-hidden" type="checkbox" name="sugar" id="sugar" checked>
                   <label class="filters__label fillers-filter__label" for="sugar">сахарные посыпки</label>
                 </li>
 
                 <li class="fillers-filter__item">
-                  <input class="fillers-filter__checkbox" type="checkbox" name="fruits" id="fruits">
+                  <input class="fillers-filter__checkbox visually-hidden" type="checkbox" name="fruits" id="fruits">
                   <label class="filters__label fillers-filter__label" for="fruits">фрукты</label>
                 </li>
 
                 <li class="fillers-filter__item">
-                  <input class="fillers-filter__checkbox" type="checkbox" name="syrups" id="syrups">
+                  <input class="fillers-filter__checkbox visually-hidden" type="checkbox" name="syrups" id="syrups">
                   <label class="filters__label fillers-filter__label" for="syrups">сиропы</label>
                 </li>
 
                 <li class="fillers-filter__item">
-                  <input class="fillers-filter__checkbox" type="checkbox" name="jams" id="jams">
+                  <input class="fillers-filter__checkbox visually-hidden" type="checkbox" name="jams" id="jams">
                   <label class="filters__label fillers-filter__label" for="jams">джемы</label>
                 </li>
               </ul>
@@ -295,7 +295,7 @@
                   <img src="images/catalog-ice-cream-3.jpg" width="168" height="168" alt="Черника.">
                 </div>
                 <h3 class="catalog__item-title">Черника</h3>
-                <p class="catalog__item-description">Крем-брюле с черничным джемом</p>
+                <p class="catalog__item-description">Крем-брюле <br> с черничным джемом</p>
                 <div class="catalog__item-price-wrapper">
                   <span class="catalog__item-price">330 ₽/кг</span>
                   <a class="catalog__item-cart-button" href="#">
@@ -312,7 +312,7 @@
                   <img src="images/catalog-ice-cream-4.jpg" width="168" height="168" alt="Бабл-гам.">
                 </div>
                 <h3 class="catalog__item-title">Бабл-гам</h3>
-                <p class="catalog__item-description">Ванильный пломбир со сладкой посыпкой</p>
+                <p class="catalog__item-description">Ванильный пломбир <br> со сладкой посыпкой</p>
                 <div class="catalog__item-price-wrapper">
                   <span class="catalog__item-price">320 ₽/кг</span>
                   <a class="catalog__item-cart-button" href="#">
@@ -346,7 +346,7 @@
                   <img src="images/catalog-ice-cream-6.jpg" width="168" height="168" alt="Банан.">
                 </div>
                 <h3 class="catalog__item-title">Банан</h3>
-                <p class="catalog__item-description">Сливочный пломбир с банановым вкусом</p>
+                <p class="catalog__item-description">Сливочный пломбир <br> с банановым вкусом</p>
                 <div class="catalog__item-price-wrapper">
                   <span class="catalog__item-price">340 ₽/кг</span>
                   <a class="catalog__item-cart-button" href="#">
@@ -380,7 +380,7 @@
                   <img src="images/catalog-ice-cream-8.jpg" width="168" height="168" alt="Клубничка.">
                 </div>
                 <h3 class="catalog__item-title">Клубничка</h3>
-                <p class="catalog__item-description">Сливочный пломбир с клубничным вкусом</p>
+                <p class="catalog__item-description">Сливочный пломбир <br> с клубничным вкусом</p>
                 <div class="catalog__item-price-wrapper">
                   <span class="catalog__item-price">300 ₽/кг</span>
                   <a class="catalog__item-cart-button" href="#">
@@ -414,7 +414,7 @@
                   <img src="images/catalog-ice-cream-10.jpg" width="168" height="168" alt="Ментол.">
                 </div>
                 <h3 class="catalog__item-title">Ментол</h3>
-                <p class="catalog__item-description">Сливочный пломбир с ментоловым сиропом</p>
+                <p class="catalog__item-description">Сливочный пломбир <br> с ментоловым сиропом</p>
                 <div class="catalog__item-price-wrapper">
                   <span class="catalog__item-price">320 ₽/кг</span>
                   <a class="catalog__item-cart-button" href="#">
@@ -448,7 +448,7 @@
                   <img src="images/catalog-ice-cream-12.jpg" width="168" height="168" alt="Крем-брюле.">
                 </div>
                 <h3 class="catalog__item-title">Крем-брюле</h3>
-                <p class="catalog__item-description">Классическое крем-брюле</p>
+                <p class="catalog__item-description">Классическое <br> крем-брюле</p>
                 <div class="catalog__item-price-wrapper">
                   <span class="catalog__item-price">280 ₽/кг</span>
                   <a class="catalog__item-cart-button" href="#">
