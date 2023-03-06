@@ -138,14 +138,13 @@ img {
   border-radius: 26px;
 }
 
-/* Нужно будет сделать ещё остальные кнопки по аналогии */
 .button:hover {
   background-color: rgba(252, 252, 252, 0.4);
   box-shadow: 0 4px 15px rgba(133, 133, 133, 0.15);
 }
 
 .button:hover::after {
-  border: 4px solid #fcfcfc;
+  border-color: #fcfcfc;
 }
 
 .button:active {
@@ -187,6 +186,43 @@ img {
   border-color: rgba(255, 47, 100, 0.3);
 }
 
+.button--other:hover {
+  color: #2d3440;
+
+  background-color: rgba(252, 252, 252, 0.3);
+}
+
+.button--other:hover::after {
+  border-color: #ff2f64;
+}
+
+.button--other:active {
+  background-color: #feafc3;
+}
+
+.button--other:active::after {
+  display: none;
+}
+
+.button--other:focus {
+  background-color: #ff2f64;
+}
+
+.button--other:focus::after {
+  display: none;
+}
+
+.button--other:disabled {
+  color: #565c66;
+
+  background-color: #b9b9b9;
+  border-color: #b9b9b9;
+}
+
+.button--other:disabled::after {
+  border-color: rgba(185, 185, 185, 0.3);
+}
+
 .button--transparent {
   padding: 8px 10px;
 
@@ -203,6 +239,42 @@ img {
   left: -4px;
 
   border: 2px solid #fcfcfc;
+}
+
+.button--transparent:hover {
+  background-color: #fcfcfc;
+  box-shadow: none;
+}
+
+.button--transparent:hover::after {
+  border-color: rgba(252, 252, 252, 0.3);
+}
+
+.button--transparent:active {
+  background-color: rgba(252, 252, 252, 0.5);
+  border-color: rgba(252, 252, 252, 0.5);
+}
+
+.button--transparent:active::after {
+  display: none;
+}
+
+.button--transparent:focus {
+  background-color: rgba(252, 252, 252, 0.3);
+}
+
+.button--transparent:focus::after {
+  display: none;
+}
+
+.button--transparent:disabled {
+  color: rgba(45, 52, 64, 0.4);
+
+  background-color: rgba(252, 252, 252, 0.3);
+}
+
+.button--transparent:disabled::after {
+  border-color: rgba(252, 252, 252, 0.4);
 }
 
 /* .header {} */
@@ -245,7 +317,7 @@ img {
 
 .nav__link {
   display: inline-block;
-  padding: 6px 13px;
+  padding: 6px 14px;
 
   line-height: 20px;
   vertical-align: baseline;
@@ -266,7 +338,7 @@ img {
   content: "";
   position: absolute;
   top: 50%;
-  right: 14px;
+  right: 16px;
 
   width: 16px;
   height: 16px;
@@ -359,7 +431,7 @@ img {
 .user-nav__item {
   position: relative;
 
-  margin-left: 16px;
+  margin-left: 17px;
   padding: 8px 0;
 }
 
@@ -839,7 +911,9 @@ img {
   border-bottom: 1px solid rgba(252, 252, 252, 0.3);
 }
 
-/* .catalog__container {} */
+.catalog__container {
+  padding-top: 2px;
+}
 
 .catalog__title-block {
   margin-bottom: 56px;
@@ -871,7 +945,7 @@ img {
 .catalog__image {
   width: 168px;
   height: 168px;
-  margin: -77px auto 17px;
+  margin: -77px auto 16px;
 
   border-radius: 50%;
 }
@@ -885,14 +959,14 @@ img {
 }
 
 .catalog__title {
-  margin: 0 0 8px;
+  margin: 0 0 10px;
 
   font-size: 20px;
   line-height: 24px;
 }
 
 .catalog__text {
-  margin: 0 0 15px;
+  margin: 0 0 14px;
 
   color: #565c66;
 }
@@ -940,7 +1014,7 @@ img {
 }
 
 .about-us__title-block {
-  margin-bottom: 55px;
+  margin-bottom: 56px;
 }
 
 .about-us__list {
@@ -1067,11 +1141,11 @@ img {
 
 .delivery__description {
   width: 450px;
-  padding: 105px 36px 10px;
+  padding: 103px 36px 10px;
 }
 
 .delivery__title-block {
-  margin-bottom: 23px;
+  margin-bottom: 24px;
 
   text-align: left;
 }
@@ -1083,7 +1157,7 @@ img {
 }
 
 .delivery__form-box {
-  padding: 42px 40px 42px;
+  padding: 41px 40px 41px;
 
   background-color: #fcfcfc;
   border-radius: 8px;
@@ -1213,13 +1287,13 @@ img {
 }
 
 .contacts__heading {
-  margin: 0 0 10px;
+  margin: 0 0 11px;
 
   color: #565c66;
 }
 
 .contacts__address {
-  margin-bottom: 26px;
+  margin-bottom: 25px;
 
   font-style: normal;
   font-weight: 700;
@@ -1236,7 +1310,7 @@ img {
 }
 
 .contacts__tip {
-  margin: 0 0 33px;
+  margin: 0 0 32px;
 
   font-size: 14px;
   line-height: 20px;
@@ -1261,7 +1335,7 @@ img {
   display: grid;
   margin: 0 auto;
 
-  gap: 5px 3px;
+  gap: 6px 3px;
   grid-template-columns: repeat(2, auto);
 }
 
@@ -1390,14 +1464,14 @@ img {
 }
 
 .breadcrumbs__container {
-  padding-top: 32px;
-  padding-bottom: 30px;
+  padding-top: 31px;
+  padding-bottom: 39px;
 }
 
 .breadcrumbs__list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .breadcrumbs__item:not(:last-child) {
@@ -1440,7 +1514,7 @@ img {
 }
 
 .filters {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 /* .filters__container {} */
@@ -1700,10 +1774,8 @@ img {
 .filters__submit {
   width: 185px;
   margin-bottom: 15px;
-  padding: 7px;
 
   font-weight: 700;
-  font-size: 14px;
   line-height: 20px;
 }
 
