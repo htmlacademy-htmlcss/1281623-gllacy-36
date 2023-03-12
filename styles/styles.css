@@ -801,7 +801,7 @@ img {
 }
 
 .slider__content--active {
-    display: block;
+  display: block;
 }
 
 .slider__title {
