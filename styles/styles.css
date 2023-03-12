@@ -782,7 +782,7 @@ img {
 .slider__container {
   position: relative;
 
-  padding: 21px 0 3px;
+  padding: 21px 0 2px;
 }
 
 .slider__wrapper {
@@ -1061,7 +1061,7 @@ img {
   display: flex;
   flex-direction: column;
   min-height: 268px;
-  padding: 37px 220px 35px 36px;
+  padding: 38px 220px 35px 36px;
 
   background-color: #ff7799;
   background-repeat: no-repeat;
@@ -1079,7 +1079,7 @@ img {
 }
 
 .gifts__title {
-  margin: 0 0 28px;
+  margin: 0 0 27px;
 
   font-size: 24px;
   line-height: 30px;
@@ -1101,7 +1101,8 @@ img {
 }
 
 .catalog__title-block {
-  margin-bottom: 56px;
+  margin-top: 2px;
+  margin-bottom: 57px;
 }
 
 .catalog__list {
@@ -1292,7 +1293,7 @@ img {
 }
 
 .gllacy-news__title {
-  margin: 0 0 13px;
+  margin: 0 0 12px;
 
   font-weight: 400;
   font-size: 16px;
@@ -1319,7 +1320,7 @@ img {
 
 .subscription__wrapper {
   height: 100%;
-  padding: 27px;
+  padding: 26px 26px 28px;
 
   background-color: #ffffff;
   border-radius: 16px;
@@ -1339,7 +1340,8 @@ img {
 }
 
 .subscription__submit {
-  width: 158px;
+  width: 152px;
+  margin-right: 4px;
 }
 
 .delivery__container {
@@ -1496,7 +1498,7 @@ img {
 
 .contacts__content {
   width: 343px;
-  padding: 41px 40px;
+  padding: 40px 40px 41px;
 
   background-color: #fcfcfc;
   border-radius: 8px;
@@ -2235,13 +2237,14 @@ img {
   align-items: center;
   min-width: 24px;
   min-height: 24px;
+  padding: 0 5px;
 
   line-height: 20px;
   color: #2d3440;
   text-decoration: none;
 
   border: 1px solid transparent;
-  border-radius: 50%;
+  border-radius: 12px;
 }
 
 .pagination__link:hover {
