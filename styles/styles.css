@@ -404,6 +404,7 @@ img {
 .user-nav__link--search {
   width: 32px;
   height: 32px;
+  padding: 0;
 }
 
 .dropdown {
