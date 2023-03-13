@@ -44,6 +44,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  min-width: 1366px;
   min-height: 100%;
   margin: 0;
 
@@ -1287,8 +1288,8 @@ img {
   background-color: #ffffff;
   background-image: url("../images/gllacy-news-background.jpg");
   background-repeat: no-repeat;
-  background-position: center right -78px;
-  background-size: 115%;
+  background-position: right;
+  background-size: cover;
   border-radius: 16px;
 }
 
@@ -1353,8 +1354,8 @@ img {
   background-color: #e8e0e0;
   background-image: url("../images/delivery-background.jpg");
   background-repeat: no-repeat;
-  background-position: top -140px right -50px;
-  background-size: 104%;
+  background-position: right;
+  background-size: cover;
   border-radius: 16px;
 
   grid-template-columns: auto auto;
@@ -1756,7 +1757,7 @@ img {
   background-position: center;
 }
 
-.breadcrumbs__item:last-child:after {
+.breadcrumbs__item:last-child::after {
   display: none;
 }
 
