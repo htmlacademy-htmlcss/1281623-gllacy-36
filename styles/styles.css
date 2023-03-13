@@ -58,6 +58,14 @@ body {
   background-color: #feafc3;
 }
 
+.body--slide-2 {
+  background-color: #69a9ff;
+}
+
+.body--slide-3 {
+  background-color: #fcc850;
+}
+
 img {
   max-width: 100%;
 
@@ -858,6 +866,14 @@ img {
   background-color: #ffcbd8;
   border-radius: 50%;
   transform: translate(-50%, -50%);
+}
+
+.slider__image-container--slider-2::before {
+  background-color: #9fc8ff;
+}
+
+.slider__image-container--slider-3::before {
+  background-color: #fcdc92;
 }
 
 .slider__image-container--active {
